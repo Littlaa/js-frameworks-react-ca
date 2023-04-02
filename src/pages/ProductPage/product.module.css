@@ -140,9 +140,9 @@
   
   .addedSuccess {
     position: absolute;
-    background-color: #579b57;
+    background-color: #ffffff;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.507);
-    border: 1px solid #329232;
+    border: 1px solid #000000;
     border-radius: 5px;
     padding: 10px 5px;
     margin: 0px auto;
@@ -150,8 +150,7 @@
     top: 50%;
     width: 310px;
     left: 50%;
-    margin-left: -155px;
-    animation: fader 2.5s linear forwards;
+    margin-left: -160px;
   }
   
   @keyframes fader {

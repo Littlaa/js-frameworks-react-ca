@@ -2,7 +2,6 @@ import { Helmet } from "react-helmet";
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { RiStarSFill } from "react-icons/ri";
-import { BiSearchAlt } from "react-icons/bi";
 import Button from "../../components/Button/";
 import styles from "./home.module.css";
 

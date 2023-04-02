@@ -62,7 +62,7 @@ export default function HomePage() {
         <title>Ecom Shop | Home</title>
       </Helmet>
       <div className={styles.title}>
-        <h1>Shop til you drop!</h1>
+        <h1>Shop till you drop!</h1>
       </div>
       <div className={styles.search}>
         <form>

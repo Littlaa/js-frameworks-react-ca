@@ -84,6 +84,14 @@ export default function HomePage() {
             <div key={product.id} className={styles.card}>
               
               <div className={styles.cardContent}>
+               
+                <img
+                  className={styles.productImage}
+                  src={product.imageUrl}
+                  alt={product.title}
+                />
+                <div>
+                <h2>{product.title}</h2>
                 <div>
                   {product.price === product.discountedPrice ? (
                     ""
@@ -100,13 +108,6 @@ export default function HomePage() {
                     </>
                   )}
                 </div>
-                <img
-                  className={styles.productImage}
-                  src={product.imageUrl}
-                  alt={product.title}
-                />
-                <div>
-                <h2>{product.title}</h2>
                   {product.price === product.discountedPrice ? (
                     `$ ${product.price}`
                   ) : (

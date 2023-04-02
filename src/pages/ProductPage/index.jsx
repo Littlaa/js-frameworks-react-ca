@@ -11,7 +11,7 @@ import styles from "./product.module.css";
 export default function ProductPage() {
   const [product, setProduct] = useState(null);
   const [loader, setLoader] = useState(false);
-  const [upsError, setUpsError] = useState(false);
+  const [error, setError] = useState(false);
   const [addedProduct, setAddedProduct] = useState(false);
 
   // Function to add successMessage when product is added.
@@ -43,7 +43,7 @@ export default function ProductPage() {
     async function getProduct(productUrl) {
       try {
         setLoader(true);
-        setUpsError(false);
+        setError(false);
 
         const response = await fetch(productUrl);
         const json = await response.json();
@@ -53,7 +53,7 @@ export default function ProductPage() {
       } catch (error) {
         console.log(error);
         setLoader(false);
-        setUpsError(true);
+        setError(true);
       }
     }
 
@@ -64,7 +64,7 @@ export default function ProductPage() {
     return <div className={styles.loader}></div>;
   }
 
-  if (upsError) {
+  if (error) {
     return (
       <div className={styles.errorMessage}>
         Ops! There is a problem...Hang tight while we figure it out!

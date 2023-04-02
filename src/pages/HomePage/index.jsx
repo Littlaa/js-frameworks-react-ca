@@ -14,7 +14,7 @@ const productUrl = "https://api.noroff.dev/api/v1/online-shop";
 export default function HomePage() {
   const [products, setProducts] = useState([]);
   const [loader, setLoader] = useState(false);
-  const [upsError, setUpsError] = useState(false);
+  const [error, setError] = useState(false);
   const [searchValue, setSearchValue] = useState("");
 
   const navigate = useNavigate();
@@ -25,7 +25,7 @@ export default function HomePage() {
   useEffect(() => {
     async function getProducts() {
       try {
-        setUpsError(false);
+        setError(false);
         setLoader(true);
 
         const response = await fetch(productUrl);
@@ -35,7 +35,7 @@ export default function HomePage() {
         setLoader(false);
       } catch (error) {
         setLoader(false);
-        setUpsError(true);
+        setError(true);
       }
     }
 
@@ -46,7 +46,7 @@ export default function HomePage() {
     return <div className={styles.loader}></div>;
   }
 
-  if (upsError) {
+  if (error) {
     return (
       <div className={styles.errorMessage}>
         Ops! There is a problem...Hang tight while we figure it out!

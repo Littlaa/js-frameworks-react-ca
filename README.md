@@ -2,6 +2,11 @@
 
 ## Run project
 
+
+```md
+npm i
+```
+
 ```md
 npm run start
 ```

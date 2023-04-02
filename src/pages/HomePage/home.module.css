@@ -2,7 +2,7 @@
     text-align: center;
   }
   
-  .searchPlacement {
+  .search {
     text-align: center;
     margin: 50px;
   }
@@ -14,7 +14,6 @@
     border-radius: 30px;
     font-size: 15px;
   }
-
   
   .cardContainer {
     display: flex;
@@ -33,12 +32,6 @@
     text-align: center;
     width: 375px;
     color: #000000;
-  }
-  
-  .cardHeader {
-    font-size: 22px;
-    font-weight: 400;
-    margin-top: 0;
   }
   
   .cardFooter {

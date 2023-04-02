@@ -64,7 +64,7 @@ export default function HomePage() {
       <div className={styles.title}>
         <h1>Shop til you drop!</h1>
       </div>
-      <div className={styles.searchPlacement}>
+      <div className={styles.search}>
         <form>
           <input
             id="search"
@@ -106,7 +106,7 @@ export default function HomePage() {
                   alt={product.title}
                 />
                 <div>
-                <h2 className={styles.cardHeader}>{product.title}</h2>
+                <h2>{product.title}</h2>
                   {product.price === product.discountedPrice ? (
                     `$ ${product.price}`
                   ) : (

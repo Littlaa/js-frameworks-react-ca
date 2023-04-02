@@ -80,7 +80,6 @@ export default function ProductPage() {
         <title>Ecom Shop | {product.title}</title>
       </Helmet>
       <div className={styles.productCard}>
-        <h1 className={styles.cardHeader}>
           <div>
             {product.price === product.discountedPrice ? (
               ""
@@ -97,8 +96,6 @@ export default function ProductPage() {
               </>
             )}
           </div>
-          
-        </h1>
         <div className={styles.productCardContent}>
           <img
             className={styles.productImage}

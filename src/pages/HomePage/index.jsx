@@ -109,7 +109,6 @@ export default function HomePage() {
                   src={product.imageUrl}
                   alt={product.title}
                 />
-
                 <div>
                 <h2 className={styles.cardHeader}>{product.title}</h2>
                   {product.price === product.discountedPrice ? (

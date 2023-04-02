@@ -7,7 +7,7 @@ import styles from "./checkout.module.css";
 // Function getting information from useCart hook containing "if" statement showing either "products if added to cart" or the statement "No items in the cart yet."
 
 export default function CheckoutPage() {
-  const { cart, clearCart, add, remove, wifeSaidNo } = useCart();
+  const { cart, clearCart, add, remove, clearAll } = useCart();
 
   return (
     <div className={styles.container}>
@@ -26,7 +26,7 @@ export default function CheckoutPage() {
                 return (
                   <div className={styles.card}>
                     <div className={styles.removeProductBtn}>
-                      <div onClick={() => wifeSaidNo(product.id)}>X</div>
+                      <div onClick={() => clearAll(product.id)}>X</div>
                     </div>
                     <div className={styles.justifyCartItems}>
                       <img

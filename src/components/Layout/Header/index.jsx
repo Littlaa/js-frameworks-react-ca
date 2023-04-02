@@ -58,8 +58,8 @@ function CartIcon() {
 
 export default function Header() {
   return (
-    <header className={styles.fixedTop}>
-      <div className={styles.headerContentDisplay}>
+    <header className={styles.fixedHeader}>
+      <div className={styles.headerContent}>
         <Nav />
         <CartIcon />
       </div>

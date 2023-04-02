@@ -1,4 +1,4 @@
-.fixedTop {
+.fixedHeader {
     width: 100%;
     position: sticky;
     top: 0px;
@@ -13,7 +13,7 @@
     z-index: 1;
   }
   
-  .headerContentDisplay {
+  .headerContent {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -68,7 +68,7 @@
   /* responsive nav */
   
   @media only screen and (min-width: 625px) {
-    .headerContentDisplay {
+    .headerContent {
       flex-direction: row;
       justify-content: space-between;
     }

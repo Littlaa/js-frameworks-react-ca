@@ -88,7 +88,7 @@ const useCartStore = create((set) => ({
   removeCart: () => set({ cart: [] }),
 }));
 
-// functions to call the above information
+// functions to call information
 
 function useCart() {
   const cart = useCartStore((state) => state.cart);
@@ -99,27 +99,22 @@ function useCart() {
   const removeProduct = useCartStore((state) => state.removeProduct);
 
   function addToCart(product) {
-    console.log(cart);
     addProduct(product);
   }
 
   function clearCart() {
-    console.log("clear");
     removeCart();
   }
 
   function add(id) {
-    console.log(cart);
     newQtyAdd(id);
   }
 
   function remove(id) {
-    console.log(cart);
     removeQty(id);
   }
 
-  function wifeSaidNo(id) {
-    console.log("NO");
+  function clearAll(id) {
     removeProduct(id);
   }
 
@@ -129,7 +124,7 @@ function useCart() {
     clearCart,
     add,
     remove,
-    wifeSaidNo,
+    clearAll,
   };
 }
 

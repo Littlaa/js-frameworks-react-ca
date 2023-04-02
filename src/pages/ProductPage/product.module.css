@@ -1,0 +1,150 @@
+/* product section css */
+
+.productCard {
+    background-color: #ffffff;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.507);
+    margin: 10px auto;
+    text-align: center;
+    max-width: 800px;
+    color: #000;
+  }
+  
+  .percentage {
+    float: left;
+    position: absolute;
+    font-size: large;
+    background-color: rgba(227, 80, 80, 0.93);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.507);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    margin: -15px;
+  }
+  
+  .cardHeader {
+    font-weight: 400;
+    padding: 8px;
+    margin-top: 0;
+  }
+  
+  .productImage {
+    height: 50vmin;
+    margin: 10px auto;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  
+  .cardFooter {
+    font-size: 16px;
+    font-weight: 400;
+    border-top: 1px solid rgb(5, 5, 5);
+    border-radius: 0px 0px 10px 10px;
+    padding: 10px;
+    margin-bottom: 0;
+    color: #000;
+  }
+  
+  .contentCardFooter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .beforeDiscount {
+    font-size: small;
+    text-decoration: line-through;
+    margin-bottom: 0px;
+  }
+  
+  .discount {
+    color: #33b939;
+  }
+  
+  /* review section css */
+  
+  .review {
+    margin-top: 50px;
+  }
+  
+  .reviewTitle {
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+  }
+  
+  .reviewCard {
+    background-color: #ffffff;
+    border: 1px solid rgb(5, 5, 5);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.507);
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+    max-width: 500px;
+    color: #000;
+  }
+  
+  .reviewHeader {
+    font-size: 16px;
+    font-weight: 600;
+    border-bottom: 1px solid rgb(10, 10, 10);
+    background-color: #ffffff;
+    padding: 8px;
+    margin: 0;
+  }
+  
+  .noReview {
+    text-align: center;
+  }
+  
+  /* loader and error */
+  
+  .loader {
+    margin: auto;
+    border: 10px solid #ffffff;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.507);
+    border-radius: 50%;
+    border-top: 10px solid #4d5551;
+    width: 100px;
+    height: 100px;
+    animation: spin 4s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .errorMessage {
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    width: 380px;
+    background-color: rgba(255, 0, 0, 0.934);
+    border: 1px solid rgb(116, 8, 8);
+    box-shadow: 2px 2px 4px 0 rgba(105, 1, 1, 0.363);
+    border-radius: 8px;
+  }
+  
+  .addedSuccess {
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.507);
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 10px 5px;
+    margin: 0px auto;
+    text-align: center;
+    top: 50%;
+    width: 310px;
+    left: 50%;
+    margin-left: -160px;
+  }

@@ -1,0 +1,30 @@
+.title {
+    text-align: center;
+    margin: 20px auto;
+  }
+  
+  .form {
+    width: 50%;
+    margin: 10px auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.507);
+    color: #000;
+  }
+  
+  .inputSize {
+    margin: 5px 5px 15px 5px;
+    padding: 8px;
+    border: 1px solid #020202;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.507);
+    font-size: 15px;
+  }
+  
+  .errorMessage {
+    padding: 10px;
+    color: red;
+  }

@@ -1,0 +1,137 @@
+.title {
+    text-align: center;
+  }
+  
+  .visuallyHidden {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+  
+  .searchPlacement {
+    text-align: center;
+    margin: 50px;
+  }
+  
+  .searchSize {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 30px;
+    font-size: 15px;
+  }
+  
+  .labelSearch {
+    margin: 5px;
+    font-size: 25px;
+  }
+  
+  .cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 40px;
+    justify-content: space-evenly;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.507);
+    margin: 10px;
+    text-align: center;
+    width: 375px;
+    color: #000000;
+  }
+  
+  .cardHeader {
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 0;
+  }
+  
+  .cardFooter {
+    font-size: 16px;
+    font-weight: 400;
+    border-top: 1px solid rgb(5, 5, 5);
+    border-radius: 0px 0px 10px 10px;
+    padding: 10px;
+    margin-bottom: 0;
+  }
+  
+  .percentage {
+    background-color: rgba(227, 80, 80, 0.93);
+    font-size: 17px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.507);
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 5px;
+    float: left;
+  }
+  
+  .productImage {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px auto;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  
+  .beforeDiscount {
+    font-size: small;
+    text-decoration: line-through;
+    margin-bottom: 0px;
+    color: #000000;
+  }
+  
+  .discount {
+    color: #33b939;
+  }
+  
+  /* loader and error */
+  
+  .loader {
+    margin: auto;
+    border: 10px solid #ffffff;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.507);
+    border-radius: 50%;
+    border-top: 10px solid #4d5551;
+    width: 100px;
+    height: 100px;
+    animation: spin 4s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .errorMessage {
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    max-width: 380px;
+    background-color: rgba(243, 7, 7, 0.934);
+    border: 1px solid rgb(116, 8, 8);
+    box-shadow: 2px 2px 4px 0 rgba(105, 1, 1, 0.363);
+    border-radius: 8px;
+  }

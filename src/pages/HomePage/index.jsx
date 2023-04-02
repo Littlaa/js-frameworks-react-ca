@@ -62,7 +62,7 @@ export default function HomePage() {
   return (
     <div>
       <Helmet>
-        <title>Ecom shop | Home</title>
+        <title>Ecom Shop | Home</title>
       </Helmet>
       <div className={styles.title}>
         <h1>Shop til you drop!</h1>
@@ -102,7 +102,7 @@ export default function HomePage() {
                             product.price) *
                             100
                         )}{" "}
-                        % OFF
+                        % Off
                       </div>
                     </>
                   )}

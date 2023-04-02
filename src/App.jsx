@@ -4,9 +4,9 @@ import Layout from "./components/Layout/layout";
 
 import HomePage from "./pages/HomePage";
 import ProductPage from "./pages/ProductPage";
-import ContactPage from "./pages/ContactPage/";
-import CheckoutPage from "./pages/CheckoutPage/";
-import CheckoutSuccessPage from "./pages/CheckoutSuccessPage/";
+import ContactPage from "./pages/ContactPage";
+import CheckoutPage from "./pages/CheckoutPage";
+import CheckoutSuccessPage from "./pages/CheckoutSuccessPage";
 
 export default function App() {
   return (

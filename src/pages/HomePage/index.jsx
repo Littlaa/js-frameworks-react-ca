@@ -127,7 +127,7 @@ export default function HomePage() {
 
               <div>
                 <Button
-                  name={"View Product"}
+                  name={"View More"}
                   onClick={() => handleOnClickProduct(product.id)}
                 />
               </div>

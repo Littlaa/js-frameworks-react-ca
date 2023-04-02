@@ -131,14 +131,13 @@
   .addedSuccess {
     position: absolute;
     background-color: #ffffff;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.507);
     border: 1px solid #000000;
     border-radius: 5px;
     padding: 10px 5px;
     margin: 0px auto;
     text-align: center;
     top: 50%;
-    width: 310px;
+    width: 300px;
     left: 50%;
     margin-left: -160px;
   }

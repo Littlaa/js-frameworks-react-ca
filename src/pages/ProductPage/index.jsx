@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useCart } from "../../hooks/useCart";
-import { RiStarSFill } from "react-icons/ri";
+import { RiStarSmileFill } from "react-icons/ri";
 import Button from "../../components/Button";
 import styles from "./product.module.css";
 
@@ -108,11 +108,11 @@ export default function ProductPage() {
           <h2>{product.title}</h2>
           <p>{product.description}</p>
           <p>
-            <RiStarSFill />
-            <RiStarSFill />
-            <RiStarSFill />
-            <RiStarSFill />
-            <RiStarSFill /> ({product.rating})
+            <RiStarSmileFill />
+            <RiStarSmileFill />
+            <RiStarSmileFill />
+            <RiStarSmileFill />
+            <RiStarSmileFill /> ({product.rating})
           </p>
 
           <div className={styles.cardFooter}>
@@ -158,11 +158,11 @@ export default function ProductPage() {
                     <p className={styles.reviewHeader}>{review.username}</p>
                     <p>{review.description}</p>
                     <p>
-                      <RiStarSFill />
-                      <RiStarSFill />
-                      <RiStarSFill />
-                      <RiStarSFill />
-                      <RiStarSFill /> ({review.rating})
+                      <RiStarSmileFill />
+                      <RiStarSmileFill />
+                      <RiStarSmileFill />
+                      <RiStarSmileFill />
+                      <RiStarSmileFill /> ({review.rating})
                     </p>
                   </div>
                 </div>

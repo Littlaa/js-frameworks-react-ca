@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet";
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { RiStarSFill } from "react-icons/ri";
+import { RiStarSmileFill } from "react-icons/ri";
 import Button from "../../components/Button/";
 import styles from "./home.module.css";
 
@@ -54,7 +54,7 @@ export default function HomePage() {
     );
   }
 
-  // HomePage content!
+  // HomePage content
 
   return (
     <div>
@@ -132,11 +132,11 @@ export default function HomePage() {
                 />
               </div>
               <p className={styles.cardFooter}>
-                <RiStarSFill />
-                <RiStarSFill />
-                <RiStarSFill />
-                <RiStarSFill />
-                <RiStarSFill /> ({product.rating})
+                <RiStarSmileFill />
+                <RiStarSmileFill />
+                <RiStarSmileFill />
+                <RiStarSmileFill />
+                <RiStarSmileFill /> ({product.rating})
               </p>
             </div>
           ))}

@@ -69,7 +69,6 @@ Your code is expected to be clean and well-formatted.
   - [x] There should also be a link that lets a user go back to the store.
   - [x] The cart must be cleared if the user gets to the Checkout success page.
 - [x] Contact Page
-  - Requirements:
   - [x] Full name (Minimum number of characters is 3, required)
   - [x] Subject (Minimum number of characters is 3, required)
   - [x] Email (Must be a valid email address, required)

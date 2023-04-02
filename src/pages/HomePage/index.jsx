@@ -66,13 +66,10 @@ export default function HomePage() {
       </div>
       <div className={styles.searchPlacement}>
         <form>
-          <label className={styles.labelSearch} for="search" alt="search-icon">
-            <span className={styles.visuallyHidden}>Search Label</span>
-          </label>
           <input
             id="search"
             type="search"
-            placeholder="Search here... "
+            placeholder="Search... "
             className={styles.searchSize}
             onChange={(e) => setSearchValue(e.target.value.toLowerCase())}
           ></input>

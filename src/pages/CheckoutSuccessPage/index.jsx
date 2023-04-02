@@ -6,7 +6,7 @@ export default function CheckoutSuccessPage() {
   return (
     <div className={styles.container}>
       <Helmet>
-        <title>E-com | Success</title>
+        <title>Ecom Shop | Success</title>
       </Helmet>
       <div className={styles.text}>
         <h1>Success!</h1>

@@ -52,8 +52,7 @@ export default function HomePage() {
   if (upsError) {
     return (
       <div className={styles.errorMessage}>
-        Oh no.. There seems to be a problem, please hang on while we look into
-        it!
+        Ops! There is a problem...Hang tight while we figure it out!
       </div>
     );
   }
@@ -63,11 +62,10 @@ export default function HomePage() {
   return (
     <div>
       <Helmet>
-        <title>E-com | Home</title>
+        <title>Ecom shop | Home</title>
       </Helmet>
       <div className={styles.title}>
-        <h1>Bored at night?</h1>
-        <p>No worries you can shop alot of exciting stuff below here..</p>
+        <h1>Shop til you drop!</h1>
       </div>
       <div className={styles.searchPlacement}>
         <form>
@@ -78,7 +76,7 @@ export default function HomePage() {
           <input
             id="search"
             type="search"
-            placeholder="Search products.. "
+            placeholder="Search here... "
             className={styles.searchSize}
             onChange={(e) => setSearchValue(e.target.value.toLowerCase())}
           ></input>

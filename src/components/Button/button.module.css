@@ -1,8 +1,8 @@
 .btn {
-    border: 1px solid white;
+    border: 1px solid rgb(0, 0, 0);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.507);
     color: white;
-    background-color: #51cece;
+    background-color: #4d5551;
     padding: 10px 30px;
     margin: 10px;
     border-radius: 0px;
@@ -15,6 +15,6 @@
     transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
     border-radius: 20px;
     color: white;
-    border: 1px solid #208888;
-    background-color: #0e4d4d;
+    border: 1px solid #000000;
+    background-color: #000000;
   }

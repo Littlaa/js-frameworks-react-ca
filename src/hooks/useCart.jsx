@@ -3,7 +3,7 @@ import { create } from "zustand";
 const useCartStore = create((set) => ({
   cart: [],
 
-  // addProduct used to add product to cart or change the quantity "if" product is already in cart.
+  // addProduct is used to add product to cart or change the quantity in cart.
 
   addProduct: (product) =>
     set((state) => {
@@ -32,7 +32,7 @@ const useCartStore = create((set) => ({
       return { cart: newCart };
     }),
 
-  // newQtyAdd used to increase the quantity when clicking "+" button
+  // newQtyAdd increase the quantity when clicking "+" button
 
   newQtyAdd: (id) =>
     set((state) => {
@@ -51,7 +51,7 @@ const useCartStore = create((set) => ({
       return { cart: newCart };
     }),
 
-  // removeQty used to decrease the quantity when clicking "-" button, and remove product when quantity reaches 0
+  // removeQty decrease the quantity when clicking "-" button, and remove product when quantity reaches 0
 
   removeQty: (id) =>
     set((state) => {
@@ -73,7 +73,7 @@ const useCartStore = create((set) => ({
       return { cart: removeProductQty };
     }),
 
-  // removeProduct used to remove the product when clicking "X" button
+  // removeProduct remove the product when clicking "X" button
 
   removeProduct: (id) =>
     set((state) => {
@@ -83,12 +83,10 @@ const useCartStore = create((set) => ({
       return { cart: newCart };
     }),
 
-  // removeCart used to reset the cart both when clicking "clear" button and "checkout" button
+  // removeCart reset the cart when clicking "clear" button and "checkout" button
 
   removeCart: () => set({ cart: [] }),
 }));
-
-// functions to call information
 
 function useCart() {
   const cart = useCartStore((state) => state.cart);

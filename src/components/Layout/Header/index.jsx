@@ -1,6 +1,6 @@
 import { useCart } from "../../../hooks/useCart";
 import { NavLink } from "react-router-dom";
-import { BsCart2 } from "react-icons/bs";
+import { BsCart3 } from "react-icons/bs";
 import styles from "./header.module.css";
 
 function Nav() {
@@ -45,7 +45,7 @@ function CartIcon() {
               navigation.isActive ? styles.active : ""
             }
           >
-            <BsCart2 />
+            <BsCart3 />
             <span className={styles.cartTotalItems}>
               {cart.reduce((totalQty, cart) => totalQty + cart.totalItems, 0)}
             </span>

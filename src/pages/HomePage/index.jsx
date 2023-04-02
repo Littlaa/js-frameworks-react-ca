@@ -70,7 +70,6 @@ export default function HomePage() {
       <div className={styles.searchPlacement}>
         <form>
           <label className={styles.labelSearch} for="search" alt="search-icon">
-            <BiSearchAlt />
             <span className={styles.visuallyHidden}>Search Label</span>
           </label>
           <input

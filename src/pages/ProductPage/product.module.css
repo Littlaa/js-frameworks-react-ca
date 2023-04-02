@@ -26,13 +26,9 @@
   }
   
   .cardHeader {
-    font-size: 22px;
     font-weight: 400;
-    border-bottom: 1px solid rgb(2, 2, 2);
-    border-radius: 10px 10px 0px 0px;
     padding: 8px;
     margin-top: 0;
-    color: #000;
   }
   
   .productImage {
@@ -151,13 +147,4 @@
     width: 310px;
     left: 50%;
     margin-left: -160px;
-  }
-  
-  @keyframes fader {
-    from {
-      opacity: 1;
-    }
-    to {
-      opacity: 0;
-    }
   }

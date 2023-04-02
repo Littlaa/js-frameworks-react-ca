@@ -43,8 +43,6 @@ export default function HomePage() {
     getProducts();
   }, []);
 
-  // Content for the above try and catch!
-
   if (loader) {
     return <div className={styles.loader}></div>;
   }
@@ -88,7 +86,7 @@ export default function HomePage() {
           )
           .map((product) => (
             <div key={product.id} className={styles.card}>
-              <h2 className={styles.cardHeader}>{product.title}</h2>
+              
               <div className={styles.cardContent}>
                 <div>
                   {product.price === product.discountedPrice ? (
@@ -113,6 +111,7 @@ export default function HomePage() {
                 />
 
                 <div>
+                <h2 className={styles.cardHeader}>{product.title}</h2>
                   {product.price === product.discountedPrice ? (
                     `$ ${product.price}`
                   ) : (

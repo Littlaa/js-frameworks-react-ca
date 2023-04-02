@@ -60,8 +60,6 @@ export default function ProductPage() {
     getProduct(`https://api.noroff.dev/api/v1/online-shop/${id}`);
   }, [id]);
 
-  // Content for the above try and catch!
-
   if (loader || !product) {
     return <div className={styles.loader}></div>;
   }
@@ -74,7 +72,7 @@ export default function ProductPage() {
     );
   }
 
-  // Product Page content!
+  // Product Page content
 
   return (
     <div>
@@ -94,12 +92,12 @@ export default function ProductPage() {
                       product.price) *
                       100
                   )}{" "}
-                  % OFF
+                  % Off
                 </div>
               </>
             )}
           </div>
-          {product.title}
+          
         </h1>
         <div className={styles.productCardContent}>
           <img
@@ -107,6 +105,7 @@ export default function ProductPage() {
             src={product.imageUrl}
             alt={product.title}
           />
+          <h2>{product.title}</h2>
           <p>{product.description}</p>
           <p>
             <RiStarSFill />

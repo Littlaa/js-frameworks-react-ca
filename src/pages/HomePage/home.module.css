@@ -1,0 +1,139 @@
+.title {
+    text-align: center;
+  }
+  
+  .visuallyHidden {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+  
+  .searchPlacement {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .searchSize {
+    width: 90%;
+    padding: 8px;
+    border: 1px solid #208888;
+    border-radius: 30px;
+    font-size: 15px;
+  }
+  
+  .labelSearch {
+    margin: 5px;
+    font-size: 25px;
+  }
+  
+  .cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 0px auto;
+    justify-content: space-evenly;
+  }
+  
+  .card {
+    background-color: #116161;
+    border: 1px solid rgb(38, 141, 141);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.507);
+    margin: 10px;
+    text-align: center;
+    width: 300px;
+  }
+  
+  .cardHeader {
+    font-size: 22px;
+    font-weight: 400;
+    border-bottom: 1px solid rgb(38, 141, 141);
+    border-radius: 10px 10px 0px 0px;
+    background-color: #0f5959;
+    padding: 8px;
+    margin-top: 0;
+  }
+  
+  .cardFooter {
+    font-size: 16px;
+    font-weight: 400;
+    border-top: 1px solid rgb(38, 141, 141);
+    border-radius: 0px 0px 10px 10px;
+    background-color: #0f5959;
+    padding: 10px;
+    margin-bottom: 0;
+  }
+  
+  .percentage {
+    background-color: rgba(255, 0, 0, 0.934);
+    font-size: 17px;
+    border: 1px solid rgb(107, 23, 23);
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.507);
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    position: absolute;
+    margin-left: 15px;
+    float: left;
+  }
+  
+  .productImage {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px auto;
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  
+  .beforeDiscount {
+    font-size: small;
+    text-decoration: line-through;
+    margin-bottom: 0px;
+  }
+  
+  .discount {
+    color: #9ee0a1;
+  }
+  
+  /* loader and error */
+  
+  .loader {
+    margin: auto;
+    border: 10px solid rgb(38, 141, 141);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.507);
+    border-radius: 50%;
+    border-top: 10px solid #116161;
+    width: 100px;
+    height: 100px;
+    animation: spinner 4s linear infinite;
+  }
+  
+  @keyframes spinner {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .errorMessage {
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    max-width: 380px;
+    background-color: rgba(243, 7, 7, 0.934);
+    border: 1px solid rgb(116, 8, 8);
+    box-shadow: 2px 2px 4px 0 rgba(105, 1, 1, 0.363);
+    border-radius: 8px;
+  }

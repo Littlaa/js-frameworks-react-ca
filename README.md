@@ -1,7 +1,10 @@
 # Ecom Shop
 
-## Run project
+![image](src/images/ecom.png)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/073d609d-cb2a-46f7-8497-94172c28180b/deploy-status)](https://app.netlify.com/sites/ecomshop1/deploys)
+
+## Run project
 
 ```md
 npm i
